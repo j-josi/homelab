@@ -1,6 +1,6 @@
 ---
 - name: Install Docker and Docker Compose
-  hosts: localhost
+  hosts: local
   become: true
   vars:
     docker_user: "{{ docker_user | default(ansible_user_id) }}"
